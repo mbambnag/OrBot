@@ -1,14 +1,13 @@
-# Galactrum-Tip-Bot
-[Galactrum Discord](https://discord.gg/PM3J6d)
+# BWS-Tip-Bot
 
 
-These files are intended to function as a multi-functional tipbot for Galactrum (ORE)
+These files are intended to function as a multi-functional tipbot for Bitcoin With Spectrum (BWS)
 
 # Requirements
 * discord.py installed
 * Python 3.6+
 * A MySQL database
-* The Galactrum wallet w/ RPC enabled.
+* The BWS wallet w/ RPC enabled.
 
 # Functions
 * Display general wallet information

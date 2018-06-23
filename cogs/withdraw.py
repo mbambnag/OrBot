@@ -50,7 +50,7 @@ class Withdraw:
         if txid is None:
             await self.bot.say("{} your withdraw failed despit having the necessary balance! Please contact the support team".format(ctx.message.author.mention))
         else:
-            await self.bot.say("{} **Withdrew {} ORE! <:blueore:424722137190760448>**{}.htm".format(ctx.message.author.mention, str(amount), txid))
+            await self.bot.say("{} **Withdrew {} BWS! <:blueore:424722137190760448>**{}.htm".format(ctx.message.author.mention, str(amount), txid))
 
 def setup(bot):
     bot.add_cog(Withdraw(bot))
