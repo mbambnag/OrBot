@@ -74,10 +74,10 @@ class Soak:
             online_users.remove(user)
             mysql.check_for_user(user.id)
             mysql.add_tip(snowflake, user.id, amount_split)
-        long_soak_msg = ":moneybag: {} **Soaked {} BWS on {} [Total {} BWS]** :moneybag: REMINDER: Do not store your coins on this server - they are not backed up and can be lost at any point! The administrator of this channel is not responsible for lost coins. You have been warned!".format(ctx.message.author.mention, str(amount_split), ', '.join([x.mention for x in receivers]), str(amount))
+        long_soak_msg = ":moneybag: {} **Soaked {} BWS on {} [Total {} BWS]** :moneybag: \n\n :warning: REMINDER: Do not store your coins on this server - they are not backed up and can be lost at any point! The administrator of this channel is not responsible for lost coins. You have been warned! :warning:".format(ctx.message.author.mention, str(amount_split), ', '.join([x.mention for x in receivers]), str(amount))
 
         if len(long_soak_msg) > 2000:
-            await self.bot.say(":moneybag: {} **Soaked {} BWS on {} users [{}]** :moneybag: REMINDER: Do not store your coins on this server - they are not backed up and can be lost at any point! The administrator of this channel is not responsible for lost coins. You have been warned!".format(ctx.message.author.mention, str(amount_split), len_receivers, str(amount)))
+            await self.bot.say(":moneybag: {} **Soaked {} BWS on {} users [{}]** :moneybag: \n\n :warning: REMINDER: Do not store your coins on this server - they are not backed up and can be lost at any point! The administrator of this channel is not responsible for lost coins. You have been warned! :warning:".format(ctx.message.author.mention, str(amount_split), len_receivers, str(amount)))
         else:
             await self.bot.say(long_soak_msg)
 
