@@ -34,7 +34,7 @@ class Tip:
             await self.bot.say("{} **:warning:You cannot tip more BWS than you have!:warning:**".format(ctx.message.author.mention))
         else:
             mysql.add_tip(snowflake, tip_user, amount)
-            await self.bot.say("{} **Tipped {} {} BWS! <:blueore:424722137190760448>**".format(ctx.message.author.mention, user.mention, str(amount)))
+            await self.bot.say("{} **Tipped {} {} BWS! **".format(ctx.message.author.mention, user.mention, str(amount)))
 
 def setup(bot):
     bot.add_cog(Tip(bot))

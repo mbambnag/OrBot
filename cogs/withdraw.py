@@ -13,7 +13,7 @@ class Withdraw:
 
     @commands.command(pass_context=True)
     async def withdraw(self, ctx, address: str, amount: float):
-        """Withdraw coins from your account to any Galactrum address"""
+        """Withdraw coins from your account to any Bitcoin with Spectrum address"""
         snowflake = ctx.message.author.id    
         if amount <= 0.0:
             await self.bot.say("{} **:warning: You cannot withdraw <= 0! :warning:**".format(ctx.message.author.mention))
@@ -48,7 +48,7 @@ class Withdraw:
 
         txid = mysql.create_withdrawal(snowflake, address, amount)
         if txid is None:
-            await self.bot.say("{} your withdraw failed despit having the necessary balance! Please contact the support team".format(ctx.message.author.mention))
+            await self.bot.say("{} your withdraw failed despite having the necessary balance! Please contact the bot owner".format(ctx.message.author.mention))
         else:
             await self.bot.say("{} **Withdrew {} BWS! <:blueore:424722137190760448>**{}.htm".format(ctx.message.author.mention, str(amount), txid))
 

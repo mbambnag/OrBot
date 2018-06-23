@@ -23,9 +23,9 @@ class Stats:
                     for item in priceData:
                         embed= discord.Embed(colour=0x00FF00)
                         embed.set_author(name='BWS Information', icon_url="http://217.163.23.222:3000/images/logo.png")
-                        embed.add_field(name="Price (USD)", value="${}".format(item['price_usd']))
-                        embed.add_field(name="Price (BTC)", value="{} BTC".format(item['price_btc']))
-                        embed.add_field(name='\u200b',value='\u200b')
+                        embed.add_field(name="current_price", value="${}".format(item['usd']))
+                        embed.add_field(name="Price (BTC)", value="{} BTC".format(item['btc']))
+                        embed.add_field(name='\SouthXchange',value='\south_xchange')
                         embed.add_field(name="Volume (USD)", value="${}".format(item['24h_volume_usd']))
                         embed.add_field(name="Market Cap", value="${}".format(item['market_cap_usd']))
                         embed.add_field(name='\u200b',value='\u200b')
