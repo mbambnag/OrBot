@@ -28,7 +28,7 @@
         },
         "txfee": 0,
         "owners": ["put your discord id here"],
-        "prefix": "!",
-        "description": "Galactrum Tipbot"
+        "prefix": "bws.",
+        "description": "BWS Tipbot"
     }
 ]}
