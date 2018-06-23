@@ -34,7 +34,7 @@ class Tip:
             await self.bot.say("{} **:warning:You cannot tip more BWS than you have!:warning:**".format(ctx.message.author.mention))
         else:
             mysql.add_tip(snowflake, tip_user, amount)
-            await self.bot.say("{} **Tipped {} {} BWS! **".format(ctx.message.author.mention, user.mention, str(amount)))
+            await self.bot.say("{} **Tipped {} {} BWS! ** REMINDER: Do not store your coins on this server - they are not backed up and can be lost at any point! The administrator of this channel is not responsible for lost coins. You have been warned!".format(ctx.message.author.mention, user.mention, str(amount)))
 
 def setup(bot):
     bot.add_cog(Tip(bot))
