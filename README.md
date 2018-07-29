@@ -65,3 +65,18 @@ python3 -m pip install -U discord.py
 ```
 pip install PyMySQL
 ```
+## Clone tipbot repository
+```
+git clone https://github.com/BWSMAVERICK/SpectrumBot
+```
+
+## Configuration
+
+Configure config.json
+
+## Run bot
+```
+cd SpectrumBot
+
+python3 bot.py
+```
