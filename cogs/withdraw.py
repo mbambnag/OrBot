@@ -15,8 +15,8 @@ class Withdraw:
     async def withdraw(self, ctx, address: str, amount: float):
         """Withdraw coins from your account to any Bitcoin with Spectrum address"""
         snowflake = ctx.message.author.id    
-        if amount <= 0.0:
-            await self.bot.say("{} **:warning: You cannot withdraw <= 0! :warning:**".format(ctx.message.author.mention))
+        if amount <= 24.99:
+            await self.bot.say("{} **:warning: Minimum withdrawal amount is 25 BWS :warning:**".format(ctx.message.author.mention))
             return
 
         abs_amount = abs(amount)
