@@ -21,7 +21,7 @@
             "file_level": 3
         },
         "soak": {
-            "soak_max_recipients": 50,
+            "soak_max_recipients": 200,
             "use_max_recipients": true,
             "soak_min_received": 0.0001,
             "use_min_received": true
