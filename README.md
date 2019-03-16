@@ -1,4 +1,4 @@
-# BWS-Tip-Bot
+# -Tip-Bot
 
 
 These files are intended to function as a multi-functional tipbot for Bitcoin With Spectrum (BWS)
