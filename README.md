@@ -67,7 +67,7 @@ pip install PyMySQL
 ```
 ## Clone tipbot repository
 ```
-git clone https://github.com/BWSMAVERICK/SpectrumBot
+git clone https://github.com/mbambnag/OrBot.git
 ```
 
 ## Configuration
@@ -76,7 +76,7 @@ Configure config.json
 
 ## Run bot
 ```
-cd SpectrumBot
+cd OrBot
 
 python3 bot.py
 ```
